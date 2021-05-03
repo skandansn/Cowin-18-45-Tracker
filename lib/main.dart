@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var args = ModalRoute.of(context).settings.arguments;
-    ;
+
     print(args);
     // Future _showNotificationWithoutSound() async {
     //   var androidPlatformChannelSpecifics = new AndroidNotificationDetails(

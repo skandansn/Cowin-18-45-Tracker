@@ -73,7 +73,8 @@ class _StateSelectState extends State<StateSelect> {
                     ),
                     flag == 1
                         ? DropdownButton<String>(
-                            hint: Text(dropdownDis),
+                            hint: Text("District"),
+                            value: (dropdownDis),
                             icon: const Icon(Icons.arrow_downward),
                             iconSize: 24,
                             elevation: 16,
