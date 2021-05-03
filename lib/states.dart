@@ -10,6 +10,7 @@ var stateindex;
 var cityindex;
 var disName;
 var disId;
+var dropdis = "District";
 int flag = 0;
 
 class _StateSelectState extends State<StateSelect> {
@@ -73,8 +74,7 @@ class _StateSelectState extends State<StateSelect> {
                     ),
                     flag == 1
                         ? DropdownButton<String>(
-                            hint: Text("District"),
-                            value: (dropdownDis),
+                            hint: Text(dropdis),
                             icon: const Icon(Icons.arrow_downward),
                             iconSize: 24,
                             elevation: 16,
@@ -85,6 +85,7 @@ class _StateSelectState extends State<StateSelect> {
                             ),
                             onChanged: (String newValues) {
                               setState(() {
+                                dropdis = newValues;
                                 // cityindex = (x[0].indexOf(newValue));
                                 dropdownDis = newValues;
                               });
